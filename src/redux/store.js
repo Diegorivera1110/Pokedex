@@ -1,8 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice'
+import pokemonReducer from './reducers';
 
-export default configureStore({
-    reducer: {
-        counter: counterReducer,
-    },
-})
+const store = createStore(pokemonReducer);
+
+export default store;
