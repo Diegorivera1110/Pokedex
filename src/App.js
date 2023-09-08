@@ -39,6 +39,14 @@ function App() {
     return (
         <Router>
             
+            <div className ="App" id={load ? "no-scroll" : "scroll"}>
+
+                <Routes>
+                    <Route path="/" element={<Home /> } />
+                </Routes>
+
+            </div>
+
         </Router>
 
     );
