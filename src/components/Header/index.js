@@ -8,20 +8,27 @@ import PokeList from "../PokeList/index";
 import Search from "../Search/index";
 
 function Header() {
-    const [currentPage, pageHandler] = useState("About");
+  const [currentPage, pageHandler] = useState("About");
 
-    const renderPage = () => {
-        switch (currentPage) {
+  const renderPage = () => {
+    switch (currentPage) {
+      case "":
+        return <></>;
+      case "":
+        return <></>;
+      case "":
+        return <></>;
+      case "":
+        return <></>;
+    }
+  };
 
-        }
-    };
-
-    return (
-        <div>
-            <Navigation currentPage={currentPage} pageHandler={pageHandler} />
-            <div>{renderPage()}</div>
-        </div>
-    )
-} 
+  return (
+    <div>
+      <Navigation currentPage={currentPage} pageHandler={pageHandler} />
+      <div>{renderPage()}</div>
+    </div>
+  );
+}
 
 export default Header;
