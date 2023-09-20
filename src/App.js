@@ -15,6 +15,8 @@ import PokeDetail from './components/PokeDetail';
 import PokeList from './components/PokeList';
 import Search from './components/Search';
 
+import { openModal } from "./redux/actions";
+
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -45,8 +47,17 @@ function App() {
                     <Route path="/" element={<Home /> } />
                 </Routes>
 
-            </div>
+                {isOpen && (
+                    <div className="modal">
+                        <div className="modal-content">
+                            <span className="close" onClick={handleCloseModal}>
+                                &times;
+                            </span>
+                        </div>
+                    </div>
+                )}
 
+            </div>
         </Router>
 
     );
