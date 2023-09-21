@@ -53,6 +53,7 @@ function App() {
                             <span className="close" onClick={handleCloseModal}>
                                 &times;
                             </span>
+                            <p>{}</p>
                         </div>
                     </div>
                 )}
