@@ -20,6 +20,8 @@ function Header() {
         return <></>;
       case "":
         return <></>;
+        default:
+          <Navigation></Navigation>
     }
   };
 
