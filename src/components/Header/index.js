@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { connect } from 'react-redux';
 import Navigation from "../Navigation";
 import About from "../About/index";
 import Favorites from "../Favorites/index";
@@ -31,6 +32,13 @@ function Header() {
       <div>{renderPage()}</div>
     </div>
   );
-}
+};
 
-export default Header;
+
+const mapStateToProps = (state) => ({
+  dataFromRedux: state.data,
+});
+
+// export default Header;
+
+export default connect(mapStateToProps)(renderPage);
