@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Diegorivera1110/Pokedex/issues"
   },
+  "browserslist": ">0.2%, not dead, not ie <= 11, not op_mini all",
+
   "homepage": "https://github.com/Diegorivera1110/Pokedex#readme"
+  
 }
