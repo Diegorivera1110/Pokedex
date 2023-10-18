@@ -45,6 +45,9 @@ function App() {
 
                 <Routes>
                     <Route path="/" element={<Home /> } />
+                    <Route path="/Header" element={<Header /> } />
+                    <Route path="/Footer" element={<Footer /> } />
+                    <Route path="/About" element={<About /> } />
                 </Routes>
 
                 {isOpen && (
